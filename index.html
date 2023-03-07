@@ -1,0 +1,148 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http: //www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <title>Modern HTML Email Template</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #cccccc;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #cccccc;
+        }
+
+        .main {
+            width: 100%;
+            background-color: #ffffff;
+            margin: 30px auto;
+            max-width: 600px;
+            border-spacing: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #000000;
+        }
+
+        .mail-body {
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            color: #000000;
+            margin-top: 0;
+            font-weight: 400;
+        }
+
+        h1 {
+            margin-top: 34.8px;
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        p {
+            font-style: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+        }
+
+        h5 {
+            font-weight: 700;
+            line-height: 16px;
+        }
+
+        .onteTimePasswordText {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 44px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center class="wrapper">
+        <table class="main" width="100%">
+            <!-- top border -->
+            <tr>
+                <td height="8" style="background-color: #fff;"></td>
+            </tr>
+            <!-- end top border -->
+            <!-- logo section -->
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td class="logo" style="text-align: center; padding: 10px;">
+                                <a href="http://www.trocah.com" target="_blank">
+                                    <img src="images/logo.svg" alt="trocah img"
+                                        style="width: 100px; max-width: 100px; height: auto; margin: auto; display: block;">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- logo section -->
+            <!-- other text -->
+            <tr>
+                <td class="mail-body">
+                    <h1 class="onteTimePasswordText">One Time Password</h1>
+                    <p style="font-weight: bold;">Dear {{name}}</p>
+                    <p> We take data protection very seriously. this measure is possible to ensure your account is
+                        secure when you reinstall or change device. </p>
+                    <p>Here is the one time password [OTP]</p>
+                    <h1 class="onteTimePasswordText">{{otp}}</h1>
+                    <p>To verify and activate your account, enter the above code.</p>
+                    <p> Best Regards <br /> Trocah Team </p>
+                </td>
+            </tr>
+            <!--  -->
+            <!-- footer section -->
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr style="width: 100%">
+                            <td class="logo" style="text-align: center; padding: 10px;">
+                                <a href="http://www.trocah.com" target="_blank">
+                                    <img src="images/footer.svg" alt="trocah img"
+                                        style="width: 100%; height: auto; margin: auto; display: block;">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- footer section -->
+        </table>
+    </center>
+</body>
+
+</html>
